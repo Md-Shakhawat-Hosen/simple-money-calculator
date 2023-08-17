@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money | Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="max-w-screen-xl mx-auto px-10">
+      <h1 class="text-4xl text-center font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">Money Master</h1>
+      <div class="flex flex-col lg:flex-row items-center gap-4">
+           <div class="lg:flex-1 shadow-xl">
+             <img class="" src="./money.jpg" alt="">
+           </div>
+           <div class="w-full lg:flex-1 text-center bg-slate-200 p-5 shadow-lg rounded-md">
+             
+              <div class="space-y-4">
+                <h1 class="font-bold text-xl">Income</h1>
+                <label for="">Income:</label>
+                <input id="income" class="px-4 py-2 rounded-sm" type="text">
+              </div>
+              <div class="space-y-4">
+                <h1 class="mt-2 font-bold text-xl">Expenses</h1>
+                <label for="">Food:</label>
+                <input id="food" class="px-4 py-2 rounded-sm" type="text">
+              </div>
+              <div class="space-y-4 ">
+                
+                <label for="">Rent:</label>
+                <input id="rent" class="px-4 py-2 rounded-sm" type="text">
+              </div>
+              <div class="space-y-4">
+                
+                <label for="">Clothes: </label>
+                <input id="clothes" class="px-4 py-2 rounded-sm" type="text">
+              </div>
+              <button onClick="calculateTotal()" class="bg-amber-300 mt-4 px-3 py-2 rounded-md mb-4 font-bold">Calculate</button>
+               <h1 class="font-bold">Total Expenses: <span id="expenses">00</span></h1>
+               <h2 class="font-bold">Balance: <span id="balance">00</span></h2>
+
+                <div class="mt-4">
+                    <label for="">Save:</label>
+                    <input id="save-input" class="px-3 py-2 w-24" type="text" name="" id="">
+                     <span>%</span>
+                     <button id="save" onclick="SavingAmount()" class="bg-amber-300 mt-4 px-3 py-2 rounded-md mb-4 font-bold">save</button>
+
+                     <h1 class="font-bold">Saving Amount: <span id="save-amount">00</span></h1>
+                     <h1 class="font-bold">Remaining Balance: <span id="remain-balance">00</span></h1>
+                </div>
+           </div>
+      </div>
+    </section>
+
+    <script src="./dom.js"></script>
+  </body>
+</html>
